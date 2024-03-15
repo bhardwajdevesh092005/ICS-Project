@@ -22,8 +22,9 @@
     <br>
     for(int i = 0;i<data_points;i++)
     <br>
-    {<br>
-        data[i] = (double*)malloc(sizeof(double)*(features+1));<br>
+    {
+    <br>
+        "\t"data[i] = (double*)malloc(sizeof(double)*(features+1));<br>
     }<br>
     </p>
     <hr>
