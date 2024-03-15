@@ -16,7 +16,7 @@
     </body>
     
 </html>
-    ''' 
+    '''C 
     double** data;
     data = (double**)malloc(sizeof(double*)*(data_points));
     for(int i = 0;i<data_points;i++)
