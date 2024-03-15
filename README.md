@@ -15,7 +15,7 @@
     </p>
     <br>
     <hr>
-    <p style = "color: red">
+    <span style="color:red">
     double** data;
     <br>
     data = (double**)malloc(sizeof(double*)*(data_points));
@@ -26,7 +26,7 @@
     <br>
         &nbsp&nbsp&nbsp&nbspdata[i] = (double*)malloc(sizeof(double)*(features+1));<br>
     }<br>
-    </p>
+    </span>
     <hr>
     </body>
 </html>
