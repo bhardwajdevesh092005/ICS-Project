@@ -12,17 +12,17 @@
   I created two functions to count the number of data points and the number of features in the csv. You have to create two double type double pointers and allocate them memory as per needed. The data pointer must be allocated memory by such that it contains rows equal to the data points and columns equal to number of features <b> +1 </b>. The extra column will be allocated with all values 1 by the conver_to_tensor function which actually reads data from the csv file and stores it in the memory allocated to the data and label pointers by passing these data and label pointers created in the main function to the convert_to_tensor function. The bias is accommodated by keeping an extra weight in the model matrix of weights.
 </p>
 <hr>
-<span>
-  double** data;
-  <br>
-  data = (double**)malloc(sizeof(double*)*(data_points));
-  <br>
-  for(int i = 0;i&ltdata_points;i++)
-  <br>
-  {
-  <br>
-    &nbsp&nbsp&nbsp&nbspdata[i] = (double*)malloc(sizeof(double)*(features+1));<br>
-  }
-  <br>
-</span>
+'''
+double** data;
+<br>
+data = (double**)malloc(sizeof(double*)*(data_points));
+<br>
+for(int i = 0;i&ltdata_points;i++)
+<br>
+{
+<br>
+  &nbsp&nbsp&nbsp&nbspdata[i] = (double*)malloc(sizeof(double)*(features+1));<br>
+}
+<br>
+'''
 <hr>
