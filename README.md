@@ -24,7 +24,7 @@
     <br>
     {
     <br>
-        "\t"data[i] = (double*)malloc(sizeof(double)*(features+1));<br>
+        &nbsp&nbsp&nbsp&nbspdata[i] = (double*)malloc(sizeof(double)*(features+1));<br>
     }<br>
     </p>
     <hr>
