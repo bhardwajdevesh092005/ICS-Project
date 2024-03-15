@@ -15,7 +15,7 @@
     </p>
     <br>
     <hr>
-    <span style="color:red">
+    <span style="color:green;font-weight:700;font-size:20px">
     double** data;
     <br>
     data = (double**)malloc(sizeof(double*)*(data_points));
