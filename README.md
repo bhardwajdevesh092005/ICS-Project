@@ -17,11 +17,14 @@
     <hr>
     <p style = "color: red">
     double** data;
+    <br>
     data = (double**)malloc(sizeof(double*)*(data_points));
+    <br>
     for(int i = 0;i<data_points;i++)
-    {
-        data[i] = (double*)malloc(sizeof(double)*(features+1));
-    }
+    <br>
+    {<br>
+        data[i] = (double*)malloc(sizeof(double)*(features+1));<br>
+    }<br>
     </p>
     <hr>
     </body>
