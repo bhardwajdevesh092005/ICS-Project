@@ -20,7 +20,7 @@
     <br>
     data = (double**)malloc(sizeof(double*)*(data_points));
     <br>
-    for(int i = 0;i\<data_points;i++)
+    for(int i = 0;i&ltdata_points;i++)
     <br>
     {
     <br>
