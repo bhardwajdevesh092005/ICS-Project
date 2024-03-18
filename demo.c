@@ -26,7 +26,7 @@ int main()
     // * Standard scaling of the data
     standard_scale(data,dat_pnts,features);
     //* Train the model
-    train_model(model, data, label, 1e-2, dat_pnts, features,9000,true,"RMSE.png");
+    train_model(model, data, label, 1e-2, dat_pnts, features,1000,true,"RMSE.png");
 
 
     // Test the model
