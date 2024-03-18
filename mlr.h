@@ -60,7 +60,7 @@ void weight_update(struct MLR *model, double **data, double **label, int dat_pnt
         double loss_sig = 0;
         for (int j = 0; j < dat_pnts; j++)
         {
-            loss_sig = (y_pred[j][0] - label[j][0]) * data[j][i];
+            loss_sig += (y_pred[j][0] - label[j][0]) * data[j][i];
         }
         model->weights[i][0] = model->weights[i][0] - ((alpha) / dat_pnts) * (loss_sig);
     }

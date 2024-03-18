@@ -23,14 +23,31 @@ int main()
     }
     // * Getting the ata loaded from the csv file.
     convert_to_tensor(data_file, data, label, features, dat_pnts);
-
     // * Standard scaling of the data
     standard_scale(data,dat_pnts,features);
     //* Train the model
-    train_model(model, data, label, 100, dat_pnts, features,100,true,"RMSE.png");
-    double **pred = predict(model, data, dat_pnts, features);
-    // printf("%lf",RMSE(label,pred,dat_pnts));
-    // printf("Done with Training!!\n");
+    train_model(model, data, label, 1e-2, dat_pnts, features,9000,true,"RMSE.png");
+
+
+    // Test the model
+    // int test_features = feature_cnt("linreg-data-test.csv");
+    // int test_dat_pnts = data_points("linreg-data-test.csv");
+    // double **test_data;
+    // test_data = (double **)malloc(sizeof(double *) * test_dat_pnts);
+    // for (int i = 0; i < test_dat_pnts; i++)
+    // {
+    //     test_data[i] = (double *)malloc(sizeof(double) * (test_features + 1));
+    // }
+    // //* Label vector
+    // double **test_label;
+    // test_label = (double **)malloc(sizeof(double *) * (test_dat_pnts));
+    // for (int i = 0; i < test_dat_pnts; i++)
+    // {
+    //     test_label[i] = (double *)malloc(sizeof(double) * 1);
+    // }
+    // convert_to_tensor("linreg-data-test.csv",test_data,test_label,test_features,test_dat_pnts);
+    // double** pred = predict(model,test_data,test_dat_pnts,test_features);
+    // printf("%lf",RMSE(test_label,pred,test_dat_pnts));
     free(data);
     free(label);
     free(model);
